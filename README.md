@@ -30,5 +30,5 @@ To avoid variable, you can use `call_user_func_array()`:
 ```php
 <?php
 
-call_user_func_array(include(__DIR__ . '/autoloader.php'), [ [ 'your\namespace\here' =>  __DIR__ . '/path/to/classes/directory', 'an\another\namespace' =>  __DIR__ . '/path/to/another/classes/directory' ] ]);
+call_user_func_array(include('path/to/autoloader.php'), [ [ 'your\namespace\here' =>  __DIR__ . '/path/to/classes/directory', 'an\another\namespace' =>  __DIR__ . '/path/to/another/classes/directory' ] ]);
 ```
