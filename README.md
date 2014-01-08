@@ -22,7 +22,7 @@ So, to use this anonymous function, just do:
 <?php
 
 $autoloader = include('path/to/autoloader.php');
-$autoloader( [ 'your\namespace\here' =>  __DIR__ . '/path/to/classes/directory', 'an\another\namespace' =>  __DIR__ . '/path/to/another/classes/directory' ]);
+$autoloader( array( 'your\namespace\here' =>  __DIR__ . '/path/to/classes/directory', 'an\another\namespace' =>  __DIR__ . '/path/to/another/classes/directory' ));
 ```
 
 To avoid variable, you can use `call_user_func_array()`:
@@ -30,5 +30,5 @@ To avoid variable, you can use `call_user_func_array()`:
 ```php
 <?php
 
-call_user_func_array(include('path/to/autoloader.php'), [ [ 'your\namespace\here' =>  __DIR__ . '/path/to/classes/directory', 'an\another\namespace' =>  __DIR__ . '/path/to/another/classes/directory' ] ]);
+call_user_func_array(include(__DIR__ . '/autoloader.php'), array( array( 'your\namespace\here' =>  __DIR__ . '/path/to/classes/directory', 'an\another\namespace' =>  __DIR__ . '/path/to/another/classes/directory' ) ));
 ```
