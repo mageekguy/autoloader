@@ -21,7 +21,7 @@ So, to using this anonymous function, just do:
 ```php
 <?php
 
-$autolaoder = include('path/to/autoloader.php');
+$autoloader = include('path/to/autoloader.php');
 $autoloader( [ 'your\namespace\here' =>  __DIR__ . '/path/to/classes/directory', 'an\another\namespace' =>  __DIR__ . '/path/to/another/classes/directory' ]);
 ```
 
