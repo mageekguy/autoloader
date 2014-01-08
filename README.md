@@ -13,7 +13,7 @@ This anonymous function takes four arguments:
 
 1. An array where each key is a namespace and each value the directory which contains classes in this namespace;
 2. An optional file format, its default value is `%s.php`;
-3. An optional array where each key is a namespace and each value is an another namespace, to define aliasing on namespaces. Its default value is `null`.
+3. An optional array where each key is a namespace and each value is an another namespace, to define aliasing on namespaces. Its default value is `null`;
 4. An optional array where each key is a fully qualified class name (whitout leading `\`) and each value is an another fully qualified class name (whitout leading `\`), to define aliasing on classes. Its default value is `null`.
 
 So, to using this anonymous function, just do:
