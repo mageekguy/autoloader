@@ -34,8 +34,8 @@ call_user_func_array(include 'path/to/autoloader.php', array(array('your\namespa
 ```
 
 ##How to use namespaces aliasing
-But what is namespace aliasing?
-Sometime, you're using class with a very long name, ie `the\best\frame\work\ever\done\is\mine\so\please\use\it\everywhere`.
+But what is namespace aliasing?  
+Sometime, you're using class with a very long name, for example `the\best\frame\work\ever\done\is\mine\so\please\use\it\everywhere`.
 In this case, you can use [importation](http://php.net/manual/en/language.namespaces.importing.php) to manipulate a short version of the class name in your code:
 
 ```php
