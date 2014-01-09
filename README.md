@@ -3,9 +3,9 @@
 Autoloader is a PHP class autoloader which is [PSR-4](https://github.com/php-fig/fig-standards/blob/master/accepted/PSR-4-autoloader.md) compliant.  
 Moreover, it supports namespace and class aliasing to simplify refactoring or to simplify class name at runtime.
 
-##Requierements
+##Requirements
 To use it, you should use a PHP version ≥ 5.3.  
-There is no other requierement.
+There is no other requirement.
 
 ##How to use it?
 The file `autoloader.php` returns an anonymous function which should be used to setup the autolaoder.
