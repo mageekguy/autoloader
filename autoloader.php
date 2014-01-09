@@ -15,6 +15,7 @@ return function($directories, $fileFormat = null, $namespaceAliases = null, $cla
 				if ($realClass !== $alias && strncmp($alias, $realClass, $aliasLength) === 0)
 				{
 					$realClass = $namespace . substr($class, $aliasLength);
+
 					break;
 				}
 			}
@@ -25,7 +26,13 @@ return function($directories, $fileFormat = null, $namespaceAliases = null, $cla
 
 				if ($realClass !== $namespace && strncmp($namespace, $realClass, $namespaceLength) === 0)
 				{
-					@include($directory . sprintf($fileFormat, str_replace('\\', DIRECTORY_SEPARATOR, substr($realClass, $namespaceLength))));
+					$path = $directory . sprintf($fileFormat, str_replace('\\', DIRECTORY_SEPARATOR, substr($realClass, $namespaceLength)));
+
+					if (is_file($path) === true)
+					{
+						require $path;
+					}
+
 					break;
 				}
 			}
