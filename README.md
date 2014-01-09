@@ -8,7 +8,7 @@ To use it, you should use a PHP version ≥ 5.3.
 There is no other requirement.
 
 ##How to use it?
-The file `autoloader.php` returns an anonymous function which should be used to setup the autolaoder.
+The file `autoloader.php` returns an anonymous function which should be used to setup the autoloader.
 This anonymous function takes four arguments:
 
 1. An array where each key is a namespace and each value the directory which contains classes in this namespace;
@@ -65,12 +65,12 @@ So, after include of this code in your project, you can now write directly:
 ```php
 <?php
 
-require 'path/to/your/bootstrap/file/which/use/autolaoder.php';
+require 'path/to/your/bootstrap/file/which/use/autoloader.php';
 
 $bestFramework = new symfony\controler();
 ```
 
-Call to the class `symfony` will be expanded at runtime automaticaly to `the\best\frame\work\ever\done\is\mine\so\please\use\it\everywhere` by autolaoder.
+Call to the class `symfony` will be expanded at runtime automaticaly to `the\best\frame\work\ever\done\is\mine\so\please\use\it\everywhere` by autoloader.
 Enjoy!
 
 Moreover, it's a very handy feature when you're refactoring your code or to avoid BC break, because you can rename a namespace at runtime, without updating your code.  
